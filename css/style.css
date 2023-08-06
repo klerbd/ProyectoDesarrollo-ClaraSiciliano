@@ -1,0 +1,230 @@
+/* Paleta 
+Dark Brown – Hex: 3F2021
+Sangria – Hex: 7C2629
+Hollywood Cerise – Hex: F8485E
+Dark Blue – Hex: 343579
+Pale Lilac – Hex: C6B0BC
+Light Apricot – Hex: F3CFB3
+*/
+
+/* Estilos header*/
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+header {
+    background-color: white;
+    width: 100%;
+}
+header nav ul {
+    list-style-type: none;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a {
+    background-color: white;
+    width: 70%;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "montserrat";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: #3F2021; 
+}
+.logo img {
+    width: 15%;
+}
+
+/* Estilos footer */ 
+footer {
+    background-color: #C6B0BC;
+}
+#social img {
+width: 30px;
+}
+/* Estilos index */
+.index-main-banner {
+    background-image: url(../media/Miyajima-Island-Torii-Gate.jpeg);
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    font-family: "montserrat";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #343579;
+    text-shadow: 0px 0px 15px rgba(198,176,188,1);
+}
+main p{
+    font-family: "montserrat";
+    font-size: 1rem;
+    text-align: center;
+    color: #3F2021;
+}
+.index-banners img{
+    width: 25%;
+}
+.index-banners h2{
+    font-family: "montserrat";
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: left;
+    color: #3F2021;
+}
+.index-banners h3{
+    font-family: "montserrat";
+    font-weight: 450;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #3F2021;
+}
+
+/* Estilos Contacto*/
+.contacto-main h1{
+    font-family: "montserrat";
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-align: left;
+    color: #343579;
+}
+.contacto-main form {
+    font-family: "montserrat";
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: left;
+    color: #3F2021;
+}
+
+/* Estilos Atractivos */
+.atractivos-main {
+    border-bottom: 2px solid #343579;
+    padding-bottom: 30px;
+}
+.atractivos-main h1{
+    font-family: "montserrat";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    color: #343579;
+}
+.atractivos-main h2{
+    font-family: "montserrat";
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: left;
+    color: #3F2021;
+}
+.atractivos-main img{
+    width: 20%;
+}
+
+.atractivos-recomendacion {
+    background-color: #f3cfb38d;
+    margin: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.atractivos-recomendacion h1{
+    font-family: "montserrat";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    color: #7C2629;
+}
+.atractivos-recomendacion h2{
+    font-family: "montserrat";
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #7C2629;
+}
+.atractivos-recomendacion img{
+width: 50%;
+padding-left: 15px;
+}
+.atractivos-recomendacion p{
+    font-family: "montserrat";
+    font-size: 1rem;
+    text-align: justify;
+    color: #7C2629;
+}
+
+.atractivos-elegidos {
+    border-top: 2px solid #343579;
+    padding-top: 40px;
+}
+.atractivos-elegidos h2{
+    font-family: "montserrat";
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: left;
+    color: #343579;
+}
+.atractivos-elegidos img{
+width: 25%;
+}
+.atractivos-elegidos h3{
+    font-family: "montserrat";
+    font-weight: 450;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #3F2021;
+}
+.atractivos-elegidos div{
+    display: inline-flexbox;
+}
+
+/* Estilos Destinos */
+.destinos-mapa h1{
+    font-family: "montserrat";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    color: #343579;
+}
+.destinos-mapa img {
+    width: 90%;
+}
+.destinos-main h2{
+    font-family: "montserrat";
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #3F2021;
+}
+
+/* Estilos Recursos */
+.recursos-intro h1{
+    font-family: "montserrat";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    color: #343579;
+}
+.recursos-intro p{
+    font-family: "montserrat";
+    font-size: 1rem;
+    text-align: center;
+    color: #3F2021;
+}
+.recursos-main h2{
+    font-family: "montserrat";
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: left;
+    color: #3F2021;
+}
+.recursos-main p{
+    font-family: "montserrat";
+    font-size: 1rem;
+    text-align: left;
+    color: #3F2021;
+}
