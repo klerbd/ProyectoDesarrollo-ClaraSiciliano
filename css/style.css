@@ -41,6 +41,12 @@ header nav a {
 /* Estilos footer */ 
 footer {
     background-color: #C6B0BC;
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
 }
 #social img {
 width: 30px;
@@ -101,8 +107,15 @@ main p{
 
 /* Estilos Atractivos */
 .atractivos-main {
-    border-bottom: 2px solid #343579;
+    display: grid;
+    border-bottom: 2px solid #7C2629;
     padding-bottom: 30px;
+    grid-template-rows: 60px 250px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "a a a a"
+    "b c d e";
+    align-items: center;
 }
 .atractivos-main h1{
     font-family: "montserrat";
@@ -111,74 +124,130 @@ main p{
     font-size: 2rem;
     text-align: center;
     color: #343579;
+    grid-area: a;
 }
-.atractivos-main h2{
+.atractivos-main a{
     font-family: "montserrat";
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.4rem;
-    text-align: left;
+    text-align: center;
+    text-decoration: none;
     color: #3F2021;
 }
-.atractivos-main img{
-    width: 20%;
+.historia {
+    grid-area: b;
 }
-
+.entretenimiento {
+    grid-area: c;
+}
+.cultura {
+    grid-area: d;
+}
+.gastronomía {
+    grid-area: e;
+}
+.atractivos-main img{
+    width: 65%;
+}
+/* Atractivos destacado central */
 .atractivos-recomendacion {
+    display: grid;
+    grid-template-rows: 60px repeat(4, 100px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+    "a a a a a"
+    "b b b c c"
+    "b b b c c"
+    "b b b c c"
+    "b b b c c";
     background-color: #f3cfb38d;
-    margin: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
+
 .atractivos-recomendacion h1{
     font-family: "montserrat";
     font-weight: bold;
     font-style: normal;
     font-size: 2rem;
-    text-align: center;
     color: #7C2629;
+    grid-area: a;
 }
 .atractivos-recomendacion h2{
     font-family: "montserrat";
     font-weight: 600;
     font-size: 1.4rem;
-    text-align: center;
+    align-self: justify;
     color: #7C2629;
 }
 .atractivos-recomendacion img{
-width: 50%;
-padding-left: 15px;
+    width: 70%;
+    grid-area: b;
+}
+.recomendacion-texto {
+    grid-area: c;
+    padding-right: 15px;
 }
 .atractivos-recomendacion p{
     font-family: "montserrat";
     font-size: 1rem;
-    text-align: justify;
+    align-self: justify;
     color: #7C2629;
 }
-
+/* Atractivos seccion elegidos */
 .atractivos-elegidos {
-    border-top: 2px solid #343579;
-    padding-top: 40px;
+    border-top: 2px solid #7C2629;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
 }
-.atractivos-elegidos h2{
+.section-title {
     font-family: "montserrat";
     font-weight: 600;
     font-size: 1.5rem;
     text-align: left;
     color: #343579;
+    grid-area: a;
 }
-.atractivos-elegidos img{
-width: 25%;
+.atractivos-elegidos {
+    display: grid;
+    grid-template-rows: 65px 100px 100px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    column-gap: 10px;
+    grid-template-areas: 
+    "a a a"
+    "b c d"
+    "b c d";
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.atractivos-elegidos h3{
+.card-one{
+    grid-area: b;
+}
+.card-two {
+    grid-area: c;
+}
+.card-three{
+    grid-area: d;
+}
+.card-title {
     font-family: "montserrat";
-    font-weight: 450;
-    font-size: 1.1rem;
-    text-align: justify;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: left;
     color: #3F2021;
 }
-.atractivos-elegidos div{
-    display: inline-flexbox;
+.card-btn {
+    font-family: "montserrat";
+    font-size: 0.8rem;
+    text-align: right;
 }
+
 
 /* Estilos Destinos */
 .destinos-mapa h1{
@@ -192,15 +261,36 @@ width: 25%;
 .destinos-mapa img {
     width: 90%;
 }
+.destinos-main {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 60px;
+}
 .destinos-main h2{
     font-family: "montserrat";
     font-weight: 600;
     font-size: 1.2rem;
-    text-align: left;
+    text-align: center;
     color: #3F2021;
+}
+.destinos-main p{
+    font-family: "montserrat";
+    font-size: 1rem;
+    text-align: center;
+    color: #3F2021;
+}
+.destinos-main div{
+    align-content: center;
 }
 
 /* Estilos Recursos */
+.recursos-intro {
+    padding: 30px 60px 30px 60px;
+}
 .recursos-intro h1{
     font-family: "montserrat";
     font-weight: bold;
@@ -211,15 +301,23 @@ width: 25%;
 }
 .recursos-intro p{
     font-family: "montserrat";
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
     color: #3F2021;
+}
+.recursos-main {
+    display: grid;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: 1fr;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 .recursos-main h2{
     font-family: "montserrat";
     font-weight: 600;
     font-size: 1.4rem;
     text-align: left;
+    text-decoration: none;
     color: #3F2021;
 }
 .recursos-main p{
@@ -227,4 +325,80 @@ width: 25%;
     font-size: 1rem;
     text-align: left;
     color: #3F2021;
+}
+
+/* Media Queries*/
+
+/* Queries de Atractivos*/
+@media only screen and (max-width:600px){
+    .atractivos-main{
+        grid-template-rows: 60px 250px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "a a"
+        "b c"
+        "d e";
+        align-items: center;
+    }
+    .atractivos-main h1{
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+    .atractivos-main a{
+        font-weight: 400;
+        font-size: 1rem;
+
+    }
+    .atractivos-elegidos{
+        grid-template-rows: 65px repeat(3, 200px);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d";
+        row-gap: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .atractivos-recomendacion{
+        grid-template-rows: 60px repeat(4, 110px);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "a"
+        "b"
+        "b"
+        "c"
+        "c";
+        padding-left: 5px;
+        padding-right: 5px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .atractivos-recomendacion h1{
+        font-weight: 700;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+/* Queries Recursos */
+    .recursos-main{
+        grid-template-rows: repeat(4,auto);    
+    }
+    .recursos-intro h1{
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+    .recursos-intro p{
+        font-size: 1rem;
+        font-weight:400
+    }
+    .recursos-main h2{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .recursos-main p{
+        font-size: 1rem;
+        font-weight:normal;
+    }
 }
