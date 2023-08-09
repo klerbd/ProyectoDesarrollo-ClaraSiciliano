@@ -29,7 +29,7 @@ header nav a {
     text-decoration: none;
     list-style-type: none;
     }*/
-    
+
 .navbar-nav{   
     font-family: "montserrat";
     font-weight: 400;
@@ -269,12 +269,13 @@ main p{
 }
 .destinos-main {
     display: grid;
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: 100px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     column-gap: 10px;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 .destinos-main h2{
     font-family: "montserrat";
@@ -292,6 +293,37 @@ main p{
 .destinos-main div{
     align-content: center;
 }
+.destinos-recomendacion{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+.recomendacion-imagen{
+    padding: 15px;
+    width: 80%px;
+}
+.recomendacion-texto{
+    padding: 15px;
+    align-items: center;
+    color: #343579;
+}
+.recomendacion-texto h1{
+    font-family: "montserrat";
+    font-weight: 750;
+    font-size: 1.8rem;
+}
+.recomendacion-texto h2{
+    font-family: "montserrat";
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.recomendacion-texto p{
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+}
+
 
 /* Estilos Recursos */
 .recursos-intro {
